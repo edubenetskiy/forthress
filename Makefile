@@ -6,8 +6,8 @@
 #
 # ------------------------------------------------
 
-ASM         = nasm
-ASMFLAGS    = -felf64 -g -Isrc/ 
+ASM			= nasm
+ASMFLAGS	= -felf64 -g -Isrc/
 
 
 NATIVE_CALLS_SUPPORT=1
@@ -15,13 +15,13 @@ NATIVE_CALLS_SUPPORT=1
 # This feature allows you to call functions from libc and other shared libraries.
 # You get support for native calls by address and dlsym.
 ifdef NATIVE_CALLS_SUPPORT
-LINKERFLAGS = -nostdlib 
+LINKERFLAGS = -nostdlib -fPIC -no-pie
 LIBS        = -ldl 
 LINKER      = gcc 
 ASMFLAGS   += -DNATIVE_CALLS
 else
 LINKER      = ld
-LINKERFLAGS = 
+LINKERFLAGS = -fPIC
 LIBS        = 
 endif
 
