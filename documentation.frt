@@ -22,3 +22,8 @@ Write string to file
 ( fd -- )
 Close file descriptor
 " doc-word
+
+' file-open-read g"
+( pathname -- fd )
+Open file in read-only mode
+" doc-word
