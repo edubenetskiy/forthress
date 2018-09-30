@@ -27,3 +27,8 @@ Close file descriptor
 ( pathname -- fd )
 Open file in read-only mode
 " doc-word
+
+' file-open-append g"
+( pathname -- fd )
+Open or create file for reading and writing to the end of file
+" doc-word
