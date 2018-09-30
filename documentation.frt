@@ -12,3 +12,8 @@ Drop the topmost element of the stack
 ( a b -- b a )
 Swap two topmost elements of the stack
 " doc-word
+
+' file-print g"
+( fd string -- )
+Write string to file
+" doc-word
