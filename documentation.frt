@@ -48,3 +48,14 @@ Returns 0 on success, -1 otherwise.
 ( -- 3 )
 Push the number of the ‘close’ system call (which is 3) onto the stack
 " doc-word
+
+' sys-open g"
+( pathname flags mode -- fd )
+Invoke the system call ‘open’ which opens and possibly creates a file
+
+The pathname must be specified as a string pointer.
+The flags should be a bitwise disjunction (OR) of values beginning with ‘O_’.
+The flags must include one of the modes: O_RDONLY, O_WRONLY, or O_RDWR.
+In case of file creation the argument ‘mode’ will be modified by umask
+and then applied to the mode bits of the created file.
+" doc-word
