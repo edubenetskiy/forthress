@@ -59,3 +59,8 @@ The flags must include one of the modes: O_RDONLY, O_WRONLY, or O_RDWR.
 In case of file creation the argument ‘mode’ will be modified by umask
 and then applied to the mode bits of the created file.
 " doc-word
+
+' sys-open-no g"
+( -- 2 )
+Push the number of the ‘open’ system call (which is 2) onto the stack
+" doc-word
