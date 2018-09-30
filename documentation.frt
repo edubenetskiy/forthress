@@ -32,3 +32,8 @@ Open file in read-only mode
 ( pathname -- fd )
 Open or create file for reading and writing to the end of file
 " doc-word
+
+' file-create g"
+( pathname -- fd )
+Clear or create empty file and open it for reading and writing
+" doc-word
