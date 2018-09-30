@@ -17,3 +17,8 @@ Swap two topmost elements of the stack
 ( fd string -- )
 Write string to file
 " doc-word
+
+' file-close g"
+( fd -- )
+Close file descriptor
+" doc-word
