@@ -64,3 +64,23 @@ and then applied to the mode bits of the created file.
 ( -- 2 )
 Push the number of the ‘open’ system call (which is 2) onto the stack
 " doc-word
+
+' O_RDONLY g"
+( -- 0x0 )
+Push value of flag O_RDONLY (open the file for reading only) onto stack
+" doc-word
+
+' O_WRONLY g"
+( -- 0x1 )
+Push value of flag O_WRONLY (open the file for writing only) onto stack
+" doc-word
+
+' O_RDWR g"
+( -- 0x2 )
+Push value of flag O_RDWR (open the file for both reading and writing) onto stack
+" doc-word
+
+' O_TRUNC g"
+( -- 0x200 )
+Push value of flag O_TRUNC (truncate the file to length 0) onto stack
+" doc-word
