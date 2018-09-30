@@ -37,3 +37,9 @@ Open or create file for reading and writing to the end of file
 ( pathname -- fd )
 Clear or create empty file and open it for reading and writing
 " doc-word
+
+' sys-close g"
+( fd -- status )
+Invoke the system call ‘close’ which closes a file descriptor
+Returns 0 on success, -1 otherwise.
+" doc-word
