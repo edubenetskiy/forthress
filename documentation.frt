@@ -43,3 +43,8 @@ Clear or create empty file and open it for reading and writing
 Invoke the system call ‘close’ which closes a file descriptor
 Returns 0 on success, -1 otherwise.
 " doc-word
+
+' sys-close-no g"
+( -- 3 )
+Push the number of the ‘close’ system call (which is 3) onto the stack
+" doc-word
